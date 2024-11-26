@@ -19,7 +19,7 @@
 .hero {
     font-family: 'Michroma', sans-serif;
     color: var(--white);
-    background: url(images/08-night.jpg);
+    background: url(images/08-night-webp.webp);
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -37,6 +37,7 @@
 
 .nav__logo--landscape {
     width: 12rem;
+    height: 3rem;
 }
 
 .nav__logo--full,
@@ -52,6 +53,7 @@
 
 .hero__heading {
     font-size: 3rem;
+    font-family: 'Michroma', Arial, sans-serif;
 }
 
 .hero__subheading {
@@ -88,14 +90,10 @@
     display: none;
 }
 
-
-/* @media only screen and (min-width: 844px) and (max-width: 1000px) { */
-
-
 @media only screen and (min-width: 1000px) {
     .hero {
         height: 100vh;
-        background: url(images/green-background.jpeg), url(images/08-night.jpg);
+        background: url(images/green-background-webp.webp), url(images/08-night-webp.webp);
         background-position: left top, right top;
         background-size: 35% 100%, 65% 100%;
         background-repeat: no-repeat;
@@ -105,8 +103,8 @@
     .hero__divider,
     .hero__menu-icon,
     .hero__links,
-    .hero__heading
-     {
+    .hero__heading,
+    .hero__menu {
         display: none;
     }
     .nav__logo--full {
@@ -162,8 +160,9 @@
         background-color: var(--white);
     }
 
-    .hero__key-icon {
-        color: var(--orange);
+    .hero__key {
+        height: 2rem;
+        width: 2rem;
     }
 
     .hero__date {
