@@ -35,9 +35,16 @@
     padding: 2rem;
 }
 
-.hero__logo {
+.nav__logo--landscape {
     width: 12rem;
 }
+
+.nav__logo--full,
+.nav__link,
+.hero__heading--desktop {
+    display: none;
+}
+
 
 .hero__content {
     margin-top: 6rem;
@@ -77,8 +84,99 @@
     background-color: #f4a261; /* Orange på hovring */
 }
 
+.hero__form {
+    display: none;
+}
 
 
+/* @media only screen and (min-width: 844px) and (max-width: 1000px) { */
 
 
-/* @media only screen and (min-width: 1200px) { */
+@media only screen and (min-width: 1000px) {
+    .hero {
+        height: 100vh;
+        background: url(images/green-background.jpeg), url(images/08-night.jpg);
+        background-position: left top, right top;
+        background-size: 35% 100%, 65% 100%;
+        background-repeat: no-repeat;
+    }
+
+    .nav__logo--landscape,
+    .hero__divider,
+    .hero__menu-icon,
+    .hero__links,
+    .hero__heading
+     {
+        display: none;
+    }
+    .nav__logo--full {
+        display: block;
+        width: 12rem;
+    }
+
+    .nav__link,
+    .hero__heading--desktop,
+    .hero__form {
+        display: block;
+    }
+
+    .hero__nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav__link {
+        margin-top: 3rem;
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: var(--white);
+        display: flex;
+        justify-content: flex-start;
+        padding: 2rem;
+        /*ha mindre mellanrum mellan länkarna*/
+    }
+
+    .nav__link:hover {
+        background-color: #f4a261;
+    }
+
+    .hero__subheading {
+        font-size: 2rem;
+        margin-left: 8rem;
+        text-align: left;
+    }
+
+    .hero__form {
+        width: 50%;
+        height: 10%;
+        margin-top: 4rem;
+        margin-left: 30rem;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        align-items: center;
+        color: var(--black);
+        background-color: var(--white);
+    }
+
+    .hero__key-icon {
+        color: var(--orange);
+    }
+
+    .hero__date {
+    border-right: 0.13rem solid var(--black); 
+    padding-right: 2rem; 
+    }
+
+    .hero__button {
+        background-color: var(--orange);
+        color: var(--white);
+        font-size: 1.3rem;
+        width: 6rem;
+        height: 3rem;
+        border-radius: 1rem;
+    }
+}
