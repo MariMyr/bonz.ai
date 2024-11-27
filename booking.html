@@ -15,13 +15,15 @@
 
 <body>
 
-    <!-- Header för mobil booking och om oss, desktop i grönt-->
     <header class="header">
+        <section class="header__container">
+        <!--GÖRA LOGO TILL LÄNK HEM-->
         <img src="images/bonz.ai-logo-white-portrait-full-webp.webp" alt="Bonz.ai logotyp" class="header__logo--desktop">
         <img src="images/menu-webp.webp" alt="Meny-knapp" class="header__menu">
         <img src="images/bonz.ai-logo-white-landscape-webp.webp" alt="Bonz.ai logotyp" class="header__logo--mobile">
         <a href="booking.html" class="header__link">Boka</a>
         <a href="about.html" class="header__link">Om oss</a>
+    </section>
     </header>
 
     <main class="booking">
@@ -34,42 +36,42 @@
         <!--För desktop-->
 
         <section class="booking__cards">
-            <article class="booking__card1">
-                <img src="images/natrurrummet.webp" alt="Sovrum med utsikt" class="booking__image1">
+            <article class="booking__card">
+                <img src="images/natrurrummet.webp" alt="Sovrum med utsikt" class="booking__image">
                 <h3 class="booking__roomname">Naturrummet</h3>
                 <p class="booking__description">Väck känslan av naturen i vårt naturrum, där trä och andra ekologiska
                     material skapar en rogivande atmosfär.</p>
-                <hr>
+                <hr class="booking__divider">
                 <p class="booking__price">Från 1 995 SEK</p>
                 <button class="booking__button">Välj</button>
             </article>
 
-            <article class="booking__card2">
-                <img src="images/familjerummet.webp" alt="Hotellrum med sofa och utsikt" class="booking__image2">
+            <article class="booking__card">
+                <img src="images/familjerummet.webp" alt="Hotellrum med sofa och utsikt" class="booking__image">
                 <h3 class="booking__roomname">Familjerummet</h3>
                 <p class="booking__description">Speciellt designat för familjer! Rymligt och bekvämt med smart teknik
                     som gör er vistelse både smidig och grön.</p>
-                <hr>
+                <hr class="booking__divider">
                 <p class="booking__price">Från 1 995 SEK</p>
                 <button class="booking__button">Välj</button>
             </article>
 
-            <article class="booking__card3">
-                <img src="images/premiumrummet.webp" alt="Öppen eld i vardagsrum" class="booking__image3">
+            <article class="booking__card">
+                <img src="images/premiumrummet.webp" alt="Öppen eld i vardagsrum" class="booking__image">
                 <h3 class="booking__roomname">Premiumrummet</h3>
                 <p class="booking__description">Njut av extra komfort och utrymme i vårt premiumrum. Smart teknik och
                     miljövänlig design för en förstklassig upplevelse.”</p>
-                <hr>
+                <hr class="booking__divider">
                 <p class="booking__price">Från 2 995 SEK</p>
                 <button class="booking__button">Välj</button>
             </article>
 
-            <article class="booking__card4">
-                <img src="images/sviten.webp" alt="Altan utanför rum vid sjö" class="booking__image4">
+            <article class="booking__card">
+                <img src="images/sviten.webp" alt="Altan utanför rum vid sjö" class="booking__image">
                 <h3 class="booking__roomname">Sviten</h3>
                 <p class="booking__description">Vår lyxsvit erbjuder exklusiv elegans, avancerad AI-teknologi och
                     hållbara lösningar för den perfekta hotellupplevelsen.</p>
-                <hr>
+                <hr class="booking__divider">
                 <p class="booking__price">Från 3 995 SEK</p>
                 <button class="booking__button">Välj</button>
             </article>
@@ -99,8 +101,6 @@
             <h4 class="footer__heading">Vår Vision</h4><br>
             <p class="footer__paragraph">Bonz.ai strävar efter att vara en förebild inom hållbarhet och innovation. Vår vision är att erbjuda en unik hotellupplevelse där modern teknik och miljövänliga lösningar skapar en harmoni mellan lyx och ansvarstagande för framtiden</p>
         </section>
-
-
     </footer>
 
 </body>
