@@ -16,7 +16,7 @@
     --darkbrown: #70432B;
 }
 
-/*Startsidan*/
+/*Startsidan index.html*/
 .hero {
     font-family: 'Michroma', sans-serif;
     color: var(--white);
@@ -36,17 +36,16 @@
     padding: 2rem;
 }
 
-.nav__logo--landscape {
+.hero__logo-landscape {
     width: 12rem;
     height: 3rem;
 }
 
-.nav__logo--full,
-.nav__link,
+.hero__logo-full,
+.hero__nav-link,
 .hero__heading--desktop {
     display: none;
 }
-
 
 .hero__content {
     margin-top: 6rem;
@@ -103,7 +102,7 @@
         background-repeat: no-repeat;
     }
 
-    .nav__logo--landscape,
+    .hero__logo-landscape,
     .hero__divider,
     .hero__menu-icon,
     .hero__links,
@@ -111,12 +110,12 @@
     .hero__menu {
         display: none;
     }
-    .nav__logo--full {
+    .hero__logo-full {
         display: block;
         width: 12rem;
     }
 
-    .nav__link,
+    .hero__nav-link,
     .hero__heading--desktop,
     .hero__form {
         display: block;
@@ -128,7 +127,7 @@
         justify-content: space-between;
     }
 
-    .nav__link {
+    .hero__nav-link {
         margin-top: 3rem;
         font-size: 1.5rem;
         text-decoration: none;
@@ -140,7 +139,7 @@
         /*ha mindre mellanrum mellan länkarna*/
     }
 
-    .nav__link:hover {
+    .hero__nav-link:hover {
         background-color: #f4a261;
     }
 
@@ -333,12 +332,12 @@
 
 }
 
-.footer__heading {
+.footer__title {
     font-size: 0.8rem;
     margin-top: 0.5rem;
 }
 
-.footer__paragraph {
+.footer__adress-text {
     font-size: 0.7rem;
 }
 
@@ -357,7 +356,7 @@
 
 /*Om oss-sidan mobilvy*/
 
-.main__info {
+.info {
     font-family: 'Montserrat';
     display: flex;
     flex-direction: column; 
