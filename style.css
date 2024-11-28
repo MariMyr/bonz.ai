@@ -16,6 +16,7 @@
     --darkbrown: #70432B;
 }
 
+
 /*Startsidan index.html*/
 .hero {
     font-family: 'Michroma', sans-serif;
@@ -28,7 +29,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-} 
+}
 
 .hero__nav {
     display: flex;
@@ -84,7 +85,8 @@
 }
 
 .hero__link:hover {
-    background-color: #f4a261; /* Orange på hovring */
+    background-color: #f4a261;
+    /* Orange på hovring */
 }
 
 .hero__form {
@@ -110,13 +112,13 @@
     .hero__menu {
         display: none;
     }
+
     .hero__logo-full {
         display: block;
         width: 12rem;
     }
 
     .hero__nav-link,
-    .hero__heading--desktop,
     .hero__form {
         display: block;
     }
@@ -150,8 +152,8 @@
     }
 
     .hero__form {
-        width: 50%;
-        height: 15%;
+        width: 50rem;
+        height: 5rem;
         margin-top: 4rem;
         margin-left: 30rem;
         border-radius: 1rem;
@@ -159,6 +161,7 @@
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+        ;
         color: var(--black);
         background-color: var(--white);
         cursor: pointer;
@@ -170,8 +173,8 @@
     }
 
     .hero__date {
-    border-right: 0.13rem solid var(--black); 
-    padding-right: 2rem; 
+        border-right: 0.13rem solid var(--black);
+        padding-right: 2rem;
     }
 
     .hero__button {
@@ -205,7 +208,7 @@
     position: relative;
 }
 
-.header__logo--mobile {
+.header__logo-mobile {
     height: 2.3rem;
     width: auto;
     position: absolute;
@@ -247,8 +250,8 @@
     font-family: 'Montserrat';
     padding: 3rem;
     display: flex;
-    flex-direction: column; 
-    gap: 2rem; 
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .booking__card {
@@ -322,14 +325,12 @@
     position: relative;
 }
 
-
 .footer__logo {
     position: absolute;
     top: 1rem;
     left: 1rem;
     height: 3rem;
     width: 3rem;
-
 }
 
 .footer__title {
@@ -344,7 +345,9 @@
 
 /*Display none i mobil-vy*/
 .header__link,
-.header__logo--desktop,
+.header__logo-desktop,
+.header__icon,
+.booking__form,
 .footer__some,
 .footer__vision {
     display: none;
@@ -352,14 +355,104 @@
 
 /*Media queries for desktop for booking*/
 
-/* @media only screen and (min-width: 768px) */
+@media only screen and (min-width: 768px) {
+
+    body {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "header header header header header header"
+            "main main main main main main"
+            "footer footer footer footer footer footer";
+    }
+
+
+    .header {
+        font-family: 'Michroma', sans-serif;
+        grid-area: header;
+        height: 20rem;
+        /* display: flex;
+        flex-direction: row;
+        justify-content: space-evenly; */
+    }
+
+    .header__logo-desktop {
+        height: 15rem;
+        width: 14rem;
+    }
+
+    .header__link {
+        margin-top: 3rem;
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: var(--white);
+        cursor: pointer;
+        display: flex;
+        justify-content: flex-start;
+        padding: 2rem;
+        /*ha mindre mellanrum mellan länkarna*/
+    }
+
+    .header__icon {
+        height: 4rem;
+        width: 3rem;
+    }
+
+    .booking {
+        grid-area: main;
+        display: grid;
+        grid-template-columns: repeat(4 1fr);
+        grid-template-rows: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .booking__card--first,
+    .booking__card--fourth {
+        width: 70%;
+        height: 20%;
+    }
+
+    .booking__card--second,
+    .booking__card--third {
+        width: 35%;
+        height: 20%;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+
+
+    .header__link,
+    .header__logo-desktop,
+    .header__icon {
+        display: block;
+    }
+
+    .header__logo-mobile,
+    .header__menu {
+        display: none;
+    }
+
+}
+
+
+
+
+
+
+
+
 
 /*Om oss-sidan mobilvy*/
 
 .info {
     font-family: 'Montserrat';
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
 .info__card {
@@ -377,9 +470,7 @@
     margin-bottom: 0.7rem;
 }
 
-.info__card--first {
-
-}
+.info__card--first {}
 
 .info__card--second {
     background-color: var(--lightbrown);
