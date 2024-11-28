@@ -152,7 +152,7 @@
 
     .hero__form {
         width: 50%;
-        height: 10%;
+        height: 15%;
         margin-top: 4rem;
         margin-left: 30rem;
         border-radius: 1rem;
@@ -219,6 +219,7 @@
 .header__menu {
     height: 2rem;
     margin-bottom: -2rem;
+    margin-right: auto;
 }
 
 .booking__text {
@@ -230,6 +231,7 @@
     font-size: 1.5rem;
     font-weight: 100;
     text-align: center;
+    margin-bottom: 0.7rem;
 }
 
 .booking__details {
@@ -259,10 +261,6 @@
     gap: 1rem;
 
 }
-
-/* .booking__card4 {
-    margin-bottom: 1rem;
-} */
 
 .booking__image {
     width: 100%;
@@ -302,6 +300,17 @@
     background-color: var(--lightbrown);
 }
 
+.booking__card--first,
+.booking__card--third {
+    border: 0.11rem solid var(--darkgreen);
+}
+
+
+.booking__card--second,
+.booking__card--fourth {
+    border: 0.2rem solid var(--lightgreen)
+}
+
 .footer {
     height: 6rem;
     width: 100%;
@@ -309,14 +318,19 @@
     color: var(--white);
     font-family: 'Montserrat';
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    padding: 0.5rem;
+    position: relative;
 }
 
 
 .footer__logo {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
     height: 3rem;
     width: 3rem;
-    margin-top: 1rem;
+
 }
 
 .footer__heading {

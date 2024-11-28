@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preload" href="https://fonts.googleapis.com/css?family=Michroma" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Michroma" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
         <link href="https://fonts.googleapis.com/css?family=Michroma" rel="stylesheet">
     </noscript>
@@ -17,13 +18,18 @@
 
     <header class="header">
         <section class="header__container">
-        <!--GÖRA LOGO TILL LÄNK HEM-->
-        <img src="images/bonz.ai-logo-white-portrait-full-webp.webp" alt="Bonz.ai logotyp" class="header__logo--desktop">
-        <img src="images/menu-webp.webp" alt="Meny-knapp" class="header__menu">
-        <img src="images/bonz.ai-logo-white-landscape-webp.webp" alt="Bonz.ai logotyp" class="header__logo--mobile">
-        <a href="booking.html" class="header__link">Boka</a>
-        <a href="about.html" class="header__link">Om oss</a>
-    </section>
+            <a href="index.html"> 
+                <img src="images/bonz.ai-logo-white-portrait-full-webp.webp" alt="Bonz.ai logotyp"
+                    class="header__logo--desktop">
+            </a>
+            <img src="images/menu-webp.webp" alt="Meny-knapp" class="header__menu">
+            <a href="index.html">
+                <img src="images/bonz.ai-logo-white-landscape-webp.webp" alt="Bonz.ai logotyp"
+                    class="header__logo--mobile">
+            </a>
+            <a href="booking.html" class="header__link">Boka</a>
+            <a href="about.html" class="header__link">Om oss</a>
+        </section>
     </header>
 
     <main class="booking">
@@ -36,7 +42,7 @@
         <!--För desktop-->
 
         <section class="booking__cards">
-            <article class="booking__card">
+            <article class="booking__card booking__card--first">
                 <img src="images/natrurrummet.webp" alt="Sovrum med utsikt" class="booking__image">
                 <h3 class="booking__roomname">Naturrummet</h3>
                 <p class="booking__description">Väck känslan av naturen i vårt naturrum, där trä och andra ekologiska
@@ -46,7 +52,7 @@
                 <button class="booking__button">Välj</button>
             </article>
 
-            <article class="booking__card">
+            <article class="booking__card booking__card--second">
                 <img src="images/familjerummet.webp" alt="Hotellrum med sofa och utsikt" class="booking__image">
                 <h3 class="booking__roomname">Familjerummet</h3>
                 <p class="booking__description">Speciellt designat för familjer! Rymligt och bekvämt med smart teknik
@@ -56,7 +62,7 @@
                 <button class="booking__button">Välj</button>
             </article>
 
-            <article class="booking__card">
+            <article class="booking__card booking__card--third">
                 <img src="images/premiumrummet.webp" alt="Öppen eld i vardagsrum" class="booking__image">
                 <h3 class="booking__roomname">Premiumrummet</h3>
                 <p class="booking__description">Njut av extra komfort och utrymme i vårt premiumrum. Smart teknik och
@@ -66,7 +72,7 @@
                 <button class="booking__button">Välj</button>
             </article>
 
-            <article class="booking__card">
+            <article class="booking__card booking__card--fourth">
                 <img src="images/sviten.webp" alt="Altan utanför rum vid sjö" class="booking__image">
                 <h3 class="booking__roomname">Sviten</h3>
                 <p class="booking__description">Vår lyxsvit erbjuder exklusiv elegans, avancerad AI-teknologi och
@@ -99,7 +105,9 @@
         </section>
         <section class="footer__vision">
             <h4 class="footer__heading">Vår Vision</h4><br>
-            <p class="footer__paragraph">Bonz.ai strävar efter att vara en förebild inom hållbarhet och innovation. Vår vision är att erbjuda en unik hotellupplevelse där modern teknik och miljövänliga lösningar skapar en harmoni mellan lyx och ansvarstagande för framtiden</p>
+            <p class="footer__paragraph">Bonz.ai strävar efter att vara en förebild inom hållbarhet och innovation. Vår
+                vision är att erbjuda en unik hotellupplevelse där modern teknik och miljövänliga lösningar skapar en
+                harmoni mellan lyx och ansvarstagande för framtiden</p>
         </section>
     </footer>
 
