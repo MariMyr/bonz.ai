@@ -86,7 +86,6 @@
 
 .hero__link:hover {
     background-color: #f4a261;
-    /* Orange på hovring */
 }
 
 .hero__form {
@@ -142,7 +141,7 @@
     }
 
     .hero__nav-link:hover {
-        background-color: #f4a261;
+        color: #f4a261;
     }
 
     .hero__subheading {
@@ -161,7 +160,6 @@
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        ;
         color: var(--black);
         background-color: var(--white);
         cursor: pointer;
@@ -189,7 +187,7 @@
 }
 
 
-/*Booking-sidan*/
+/* Booking-sidan */
 
 .header {
     height: 6rem;
@@ -261,7 +259,6 @@
     flex-direction: column;
     overflow: hidden;
     gap: 1rem;
-
 }
 
 .booking__image {
@@ -306,7 +303,6 @@
 .booking__card--third {
     border: 0.11rem solid var(--darkgreen);
 }
-
 
 .booking__card--second,
 .booking__card--fourth {
@@ -357,7 +353,7 @@
 
 @media only screen and (min-width: 768px) {
 
-    body {
+    .booking-page {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: auto;
@@ -366,7 +362,6 @@
             "main main main main main main"
             "footer footer footer footer footer footer";
     }
-
 
     .header {
         font-family: 'Michroma', sans-serif;
@@ -401,24 +396,59 @@
 
     .booking {
         grid-area: main;
-        display: grid;
-        grid-template-columns: repeat(4 1fr);
-        grid-template-rows: auto;
-        justify-content: center;
-        align-items: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
     }
 
-    .booking__card--first,
+.booking__card{
+    width: 100%;
+
+}
+    
+    .booking__cards {
+        padding: 1rem;
+        display: grid;
+        grid-template-areas:
+            "first first first first first first"
+            "second second second third third third"
+            "fourth fourth fourth fourth fourth fourth";
+        grid-template-columns: repeat(6, 1fr);
+        gap: 2rem;
+    }
+
+    .booking__card--first {
+        grid-area: first;
+        /* grid-column: span 6; */
+    }
+
+    .booking__card--second {
+        grid-area: second;
+        /* grid-column: span 3; */
+    }
+
+    .booking__card--third {
+        grid-area: third;
+        /* grid-column: span 3; */
+    }
+
     .booking__card--fourth {
-        width: 70%;
-        height: 20%;
+        grid-area: fourth;
+        /* grid-column: span 6; */
+    }
+
+
+    /* .booking__card--first,
+    .booking__card--fourth {
+        width: 80%;
+        height: 70%;
     }
 
     .booking__card--second,
     .booking__card--third {
         width: 35%;
         height: 20%;
-    }
+    } */
 
     footer {
         grid-area: footer;
