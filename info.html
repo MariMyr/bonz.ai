@@ -3,21 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://fonts.googleapis.com/css?family=Michroma' rel='stylesheet'>
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Michroma" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css?family=Michroma" rel="stylesheet">
+    </noscript>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
     <title>Bonz.ai infosite</title>
 </head>
 <body>
     <header class="header">
-
+        <section class="header__container">
+            <a href="index.html"> 
+                <img src="images/bonz.ai-logo-white-portrait-full-webp.webp" alt="Bonz.ai logotyp"
+                    class="header__logo--desktop">
+            </a>
+            <img src="images/menu-webp.webp" alt="Meny-knapp" class="header__menu">
+            <a href="index.html">
+                <img src="images/bonz.ai-logo-white-landscape-webp.webp" alt="Bonz.ai logotyp"
+                    class="header__logo--mobile">
+            </a>
+        </section>
     </header>
 
     <main class="main__info">
-
+        <h2 class="info__title">Om oss</h2>
+        <section class="info__card info__card--first">
+            <p class="info__text">Bonz.ai är där framtid och natur möts. Upplev en modern och hållbar hotellvistelse med teknik som gör ditt besök både bekvämt och miljövänligt.</p>
+            <img src="images/sviten.webp" alt="Altan utanför rum vid sjö" class="info__image">
+        </section>
+        <section class="info__card info__card--second">
+            <p class="info__text">AI på Bonz.ai gör allt enklare - från att justera rummet till att minska resursslöseri. Smart teknik för en bättre upplevelse och en grönare planet.</p>
+            <img src="images/premiumrummet.webp" alt="Öppen eld i vardagsrum" class="info__image">
+        </section>
+        <section class="info__card info__card--third">
+            <p class="info__text">Hållbarhet är kärnan i Bonz.ai. Med förnybar energi och miljövänliga lösningar skapar vi en hotellvistelse som gör skillnad.</p>
+            <img src="images/natrurrummet.webp" alt="Sovrum med utsikt" class="info__image">
+        </section>
+        <section class="info__card info__card--fourth">
+            <p class="info__text">Bonz.ai:s rum är designade för komfort och innovation. Här möter modern teknologi hållbara material för en unik och avkopplande vistelse.</p>
+            <img src="images/familjerummet.webp" alt="Hotellrum med sofa och utsikt" class="info__image">
+        </section>
+        <section class="info__carbon">
+            <img src="images/Globe.webp" alt="Jordklot ikon" class="info__globe">
+            <h3 class="info__heading">Se hur mycket koldioxid som sparas</h3>
+            <img src="images/Arrow.webp" alt="Pil ikon" class="info__arrow">
+        </section>
     </main>
 
     <footer class="footer">
-
+        <footer class="footer">
+            <section class="footer__images">
+                <img src="images/bonz.ai-logo-white-symbol-webp.webp" alt="Bonz.ai logotyp" class="footer__logo">
+                <img src="images/SoMe-new.png" alt="Logotyp Facebook, Instagram, Linkedin" class="footer__some">
+            </section>
+            <section class="footer__info">
+                <h4 class="footer__heading">Om oss</h4>
+                <h4 class="footer__heading">Bokningar</h4>
+                <h4 class="footer__heading">Policy</h4>
+            </section>
+            <section class="footer__adress">
+                <h4 class="footer__heading">Hitta hit</h4><br>
+                <p class="footer__paragraph">Hotel Bonz.ai</p>
+                <p class="footer__paragraph">Hotellgatan 9</p>
+                <p class="footer__paragraph">121 11 Hotellstan</p>
+            </section>
+            <section class="footer__vision">
+                <h4 class="footer__heading">Vår Vision</h4><br>
+                <p class="footer__paragraph">Bonz.ai strävar efter att vara en förebild inom hållbarhet och innovation. Vår
+                    vision är att erbjuda en unik hotellupplevelse där modern teknik och miljövänliga lösningar skapar en
+                    harmoni mellan lyx och ansvarstagande för framtiden</p>
+            </section>
+        </footer>
     </footer>
     
 </body>

@@ -350,3 +350,71 @@
 .footer__vision {
     display: none;
 }
+
+/*Media queries for desktop for booking*/
+
+/* @media only screen and (min-width: 768px) */
+
+/*Om oss-sidan mobilvy*/
+
+.main__info {
+    font-family: 'Montserrat';
+    display: flex;
+    flex-direction: column; 
+}
+
+.info__card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 1rem;
+}
+
+.info__title {
+    font-family: 'Michroma', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 0.7rem;
+}
+
+.info__card--first {
+
+}
+
+.info__card--second {
+    background-color: var(--lightbrown);
+    color: var(--white);
+}
+
+.info__card--third {
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.info__card--fourth {
+    background-color: var(--lightgreen);
+}
+
+.info__carbon {
+    display: flex;
+    padding: 1rem;
+}
+
+.info__heading {
+    font-family: 'Michroma', sans-serif;
+    font-size: 1rem;
+    font-weight: 100;
+    padding: 0.5rem;
+}
+
+.info__globe,
+.info__arrow {
+    height: 2rem;
+    width: 2rem;
+
+}
+
+/*Media queries for desktop for om oss*/
+
+/* @media only screen and (min-width: 768px) */
