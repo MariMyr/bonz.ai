@@ -137,7 +137,7 @@
 
     .hero__nav-links {
         display: flex;
-        gap: 2rem; 
+        gap: 2rem;
         margin-left: 20rem;
     }
 
@@ -162,14 +162,14 @@
 
     .hero__form {
         display: flex;
-        position: absolute; 
-        top: 38rem; 
+        position: absolute;
+        top: 38rem;
         right: 15rem;
         width: 40%;
-        height: 5rem; 
+        height: 5rem;
         padding: 1rem;
         border-radius: 1rem;
-        justify-content: space-between; 
+        justify-content: space-between;
         align-items: center;
         background-color: var(--white);
         color: var(--black);
@@ -354,6 +354,7 @@
 .header__logo-desktop,
 .header__icon,
 .booking__form,
+.booking__search,
 .footer__some,
 .footer__vision {
     display: none;
@@ -416,15 +417,55 @@
     .booking {
         grid-area: main;
         width: 100%;
-        display: flex;
-        flex-direction: column;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
     }
 
-.booking__card{
-    width: 100%;
+    .booking__search {
+        font-family: 'Michroma', sans-serif;
+        font-size: 2rem;
+        font-weight: 100;
+        /* border-bottom: 0.2rem solid var(--lightgreen); */
+        text-align: center;
+        margin: 7rem 0rem 2rem 0rem;
+    }
 
-}
-    
+    .booking__form {
+        margin: 5rem;
+        padding: 1rem;
+        width: 50%;
+        margin: auto;
+        background-color: var(--white);
+        color: var(--black);
+        border-radius: 1rem;
+        border: 1px solid black;
+    }
+
+    .booking__form-box {
+        height: 3rem;
+        width: auto;
+        gap: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .booking__form-icon {
+        height: 3rem;
+        width: 4rem;
+    }
+
+ 
+
+    .booking__card {
+        width: 80%;
+        height: auto;
+    }
+
     .booking__cards {
         padding: 1rem;
         display: grid;
@@ -433,41 +474,30 @@
             "second second second third third third"
             "fourth fourth fourth fourth fourth fourth";
         grid-template-columns: repeat(6, 1fr);
-        gap: 2rem;
+        gap: 3rem;
     }
 
     .booking__card--first {
         grid-area: first;
-        /* grid-column: span 6; */
+        display: flex;
+
     }
 
     .booking__card--second {
         grid-area: second;
-        /* grid-column: span 3; */
+ 
     }
 
     .booking__card--third {
         grid-area: third;
-        /* grid-column: span 3; */
+
     }
 
     .booking__card--fourth {
         grid-area: fourth;
-        /* grid-column: span 6; */
+ 
     }
 
-
-    /* .booking__card--first,
-    .booking__card--fourth {
-        width: 80%;
-        height: 70%;
-    }
-
-    .booking__card--second,
-    .booking__card--third {
-        width: 35%;
-        height: 20%;
-    } */
 
     .footer {
         grid-area: footer;
@@ -497,13 +527,13 @@
     .footer__vision {
         margin-right: 4rem;
     }
-    
+
     .footer__title {
         font-size: 1.3rem;
         margin-top: 0.5rem;
         font-weight: 100;
     }
-    
+
     .footer__adress-text,
     .footer__vision-text {
         font-size: 1rem;
@@ -512,17 +542,20 @@
 
 
 
-
     .header__link,
     .header__logo-desktop,
     .header__icon,
+    .booking__form,
+    .booking__search,
     .footer__some,
     .footer__vision {
         display: block;
     }
 
     .header__logo-mobile,
-    .header__menu {
+    .header__menu,
+    .booking__title,
+    .booking__details {
         display: none;
     }
 
@@ -542,13 +575,7 @@
     font-family: 'Montserrat';
     display: flex;
     flex-direction: column;
-}
 
-.info__card {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    gap: 1rem;
 }
 
 .info__title {
@@ -556,7 +583,22 @@
     font-size: 1.5rem;
     font-weight: 100;
     text-align: center;
-    margin-bottom: 0.7rem;
+    margin-top: 2rem;
+    margin-bottom: -1rem;
+}
+
+.info__card {
+    font-size: 1rem;
+    line-height: 200%;
+    gap: 1rem;
+    padding: 4rem 2rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.info__image {
+    border-radius: 0.5rem;
 }
 
 
@@ -575,6 +617,7 @@
 }
 
 .info__carbon {
+    margin: 1rem;
     display: flex;
     padding: 1rem;
 }
@@ -590,7 +633,15 @@
 .info__arrow {
     height: 2rem;
     width: 2rem;
+}
 
+/*Display none i mobil-vy*/
+.header__link,
+.header__logo-desktop,
+.header__icon,
+.footer__some,
+.footer__vision {
+    display: none;
 }
 
 /*Media queries for desktop for om oss*/
