@@ -635,15 +635,74 @@
     width: 2rem;
 }
 
-/*Display none i mobil-vy*/
-.header__link,
-.header__logo-desktop,
-.header__icon,
-.footer__some,
-.footer__vision {
+.info__ai {
     display: none;
 }
 
-/*Media queries for desktop for om oss*/
 
-/* @media only screen and (min-width: 768px) */
+/* Media queries for desktop for om oss */
+
+@media only screen and (min-width: 768px) {
+
+    .info {
+        background-color: var(--beige);
+    }
+
+    .info__cards{
+        margin: 5rem;
+        height: 60rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 2rem;
+        grid-template-areas: 
+        "first second"
+        "third fourth"
+        "carbon ai";
+    }
+
+
+    .info__title {
+        margin-bottom: 3rem;
+    }
+
+    .info__card--first {
+        grid-area: first;
+        background-color: var(--white);
+        display: flex;
+        flex-direction: row;
+    }
+
+    .info__card--second {
+        grid-area: second;
+        display: flex;
+        flex-direction: row-reverse;
+        
+    }
+
+    .info__card--third {
+        grid-area: third;        
+        display: flex;
+        flex-direction: row-reverse;
+
+    }
+
+    .info__card--fourth {
+        grid-area: fourth;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .info__carbon {
+        grid-area: carbon;
+    }
+
+    .info__ai {
+        grid-area: ai;
+    }
+
+
+    .info__ai {
+        display: block;
+    }
+}
