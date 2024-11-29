@@ -42,6 +42,12 @@
     height: 3rem;
 }
 
+.hero__menu {
+    height: 2.6rem;
+    width: 2.6rem;
+    margin-left: auto;
+}
+
 .hero__logo-full,
 .hero__nav-link,
 .hero__heading--desktop {
@@ -115,6 +121,7 @@
     .hero__logo-full {
         display: block;
         width: 12rem;
+        height: 13rem;
     }
 
     .hero__nav-link,
@@ -124,20 +131,23 @@
 
     .hero__nav {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .hero__nav-links {
+        display: flex;
+        gap: 2rem; 
+        margin-left: 20rem;
     }
 
     .hero__nav-link {
-        margin-top: 3rem;
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         text-decoration: none;
         color: var(--white);
         cursor: pointer;
         display: flex;
-        justify-content: flex-start;
-        padding: 2rem;
-        /*ha mindre mellanrum mellan länkarna*/
+        padding: 1.5rem;
     }
 
     .hero__nav-link:hover {
@@ -151,18 +161,18 @@
     }
 
     .hero__form {
-        width: 50rem;
-        height: 5rem;
-        margin-top: 4rem;
-        margin-left: 30rem;
-        border-radius: 1rem;
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        position: absolute; 
+        top: 38rem; 
+        right: 15rem;
+        width: 40%;
+        height: 5rem; 
+        padding: 1rem;
+        border-radius: 1rem;
+        justify-content: space-between; 
         align-items: center;
-        color: var(--black);
         background-color: var(--white);
-        cursor: pointer;
+        color: var(--black);
     }
 
     .hero__key {
@@ -500,7 +510,6 @@
     margin-bottom: 0.7rem;
 }
 
-.info__card--first {}
 
 .info__card--second {
     background-color: var(--lightbrown);
