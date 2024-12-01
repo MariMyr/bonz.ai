@@ -16,6 +16,22 @@
     --darkbrown: #70432B;
 }
 
+@font-face {
+    font-family: 'Michroma';
+    src: url(fonts/Fonts/Michroma-Regular.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(fonts/Fonts/Montserrat-Regular.woff2) format('woff2');
+    font-weight: 400; /* Normal */
+    font-style: normal;
+    font-display: swap;
+}
+
 
 /*Startsidan index.html*/
 .hero {
@@ -424,6 +440,8 @@
 
     .booking__search {
         font-family: 'Michroma', sans-serif;
+        /* font-family: 'Calibri'; */
+        /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
         font-size: 2rem;
         font-weight: 100;
         /* border-bottom: 0.2rem solid var(--lightgreen); */
