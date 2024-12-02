@@ -37,7 +37,7 @@
 .hero {
     font-family: 'Michroma';
     color: var(--white);
-    background: url(images/08-night-webp.webp);
+    background: url(images/Background-start.webp);
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -117,7 +117,7 @@
 /*Media queries for desktop for startsidan*/
 @media only screen and (min-width: 768px) {
     .hero {
-        background: url(images/green-background-webp.webp), url(images/08-night-webp.webp);
+        background: url(images/green-background.webp), url(images/Background-start.webp);
         background-position: left top, right top;
         background-size: 35% 100%, 65% 100%;
         background-repeat: no-repeat;
@@ -214,7 +214,7 @@
 .header {
     height: 6rem;
     width: 100%;
-    background: url(images/green-background-webp.webp);
+    background: url(images/green-background.webp);
     display: flex;
     align-items: center;
 }
@@ -551,7 +551,7 @@
 }
 .info__card {
     font-size: 1rem;
-    line-height: 200%;
+    line-height: 1.5;
     gap: 1rem;
     padding: 4rem 2rem 2rem 2rem;
     display: flex;
@@ -593,7 +593,7 @@
 }
 
 /* Media queries for desktop for om oss */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1000px) {
     .header__link.active{
         border-bottom: 0.2rem solid var(--lightgreen);
     }
@@ -621,15 +621,122 @@
     .info__card {
         display: flex;
         flex-direction: column;
+        min-height: 27rem;
     }
     .info__image {
-        width: 70%;
+        width: 65%;
         height: 100%;
         object-fit: cover;
     }
     .info__text {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         line-height: 1.9;
+        width: 100%;
+        object-fit: cover;
+    }
+    .info__card--first {
+        grid-area: first;
+        background-color: var(--white);
+        display: flex;
+        flex-direction: row;
+    }
+    .info__card--second {
+        grid-area: second;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .info__card--third {
+        grid-area: third;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .info__card--fourth {
+        grid-area: fourth;
+        display: flex;
+        flex-direction: row;
+    }
+    .info__carbon {
+        grid-area: carbon;
+        display: flex;
+        flex-direction: row;
+    }
+    .info__globe {
+        height: 3rem;
+        width: 3rem;
+    }
+    .info__arrow {
+        height: 3rem;
+        width: 4rem;
+    }
+    .info__heading {
+        font-size: 1.7rem;
+        font-weight: 100;
+    }
+    .info__ai {
+        grid-area: ai;
+        display: block;
+        display: flex;
+        flex-direction: row;
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width:1100px) {
+    .header__links {
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+        margin: 10rem 20rem 0 0;
+        background: rgba(31, 43, 44, 0.8);
+    }
+    .header__link {
+        font-size: 1.7rem;
+        text-decoration: none;
+        color: var(--white);
+        cursor: pointer;
+        padding: 1.5rem;
+    }
+
+    .header__link.active{
+        border-bottom: 0.2rem solid var(--lightgreen);
+    }
+    .info {
+        background-color: var(--beige);
+    }
+    .info__title {
+        font-size: 2.5rem;
+        border-bottom: 0.2rem solid var(--orange);
+        width: 30%;
+        margin: 5rem 0 0 20rem;
+    }
+    .info__cards {
+        margin: 5rem;
+        height: 70rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 2rem;
+        grid-template-areas:
+            "first second"
+            "third fourth"
+            "carbon ai";
+    }
+    .info__card {
+        display: flex;
+        flex-direction: column;
+        min-height: 27rem;
+    }
+    .info__image {
+        width: 65%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .info__text {
+        font-size: 1rem;
+        line-height: 1.7;
+        width: 100%;
+        object-fit: cover;
     }
     .info__card--first {
         grid-area: first;
