@@ -59,8 +59,8 @@
 }
 
 .hero__menu {
-    height: 2.6rem;
-    width: 2.6rem;
+    height: 3rem;
+    width: 3rem;
     margin-left: auto;
 }
 
@@ -135,7 +135,7 @@
     .hero__logo-full {
         display: block;
         width: 12rem;
-        height: 13rem;
+        height: auto;
     }
 
     .hero__nav-link,
@@ -200,7 +200,7 @@
     }
 
     .hero__button {
-        background-color: var(--orange);
+        background-color: var(--darkgreen);
         color: var(--white);
         font-size: 1.3rem;
         width: 6rem;
@@ -562,7 +562,7 @@
     border-radius: 0.5rem;
 }
 .info__card--second {
-    background-color: var(--lightbrown);
+    background-color: var(--darkbrown);
     color: var(--white);
 }
 .info__card--third {
