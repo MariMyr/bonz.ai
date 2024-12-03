@@ -170,7 +170,7 @@
 
     .hero__subheading {
         font-size: 2rem;
-        margin-left: 8rem;
+        margin-left: 17rem;
         text-align: left;
     }
 
@@ -179,8 +179,8 @@
         position: absolute;
         top: 38rem;
         right: 15rem;
-        width: 40%;
-        height: 5rem;
+        width: 70%;
+        height: 8rem;
         padding: 1rem;
         border-radius: 1rem;
         justify-content: space-between;
@@ -189,17 +189,28 @@
         color: var(--black);
     }
 
-    .hero__key {
-        height: 2rem;
-        width: 2rem;
+    .form__label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
     }
 
-    .hero__date {
-        border-right: 0.13rem solid var(--black);
-        padding-right: 2rem;
+    .form__label,
+    .form__select {
+        width: 100%;
+        padding: 0.5rem;
+        font-size: 1rem;
+        font-weight: 100;
     }
 
-    .hero__button {
+    .form__input {
+        padding: 0.5rem; 
+        font-size: 1.1rem; 
+        height: 2.5rem; 
+        width: 100%;
+    }
+
+    .form__button {
         background-color: var(--darkgreen);
         color: var(--white);
         font-size: 1.3rem;
@@ -208,6 +219,10 @@
         border-radius: 1rem;
         cursor: pointer;
     }
+
+    .form__button:hover {
+        background-color: #a05c1f;
+      }
 }
 
 /* Booking-sidan */
@@ -386,20 +401,24 @@
     .header {
         font-family: 'Michroma', sans-serif;
         font-weight: bold;
+        background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.5)), url(images/green-background.webp);
         grid-area: header;
         height: 20rem;
     }
+
+
     .header__logo-desktop {
         height: 15rem;
         width: 14rem;
     }
+
     .header__links {
         display: flex;
         flex-direction: row;
-        gap: 4rem;
-        margin: 10rem 40rem 0 0;
-        background: rgba(31, 43, 44, 0.8);
+        gap: 6rem;
+        margin: 10rem 35rem 0 0;
     }
+
     .header__link {
         font-size: 1.7rem;
         text-decoration: none;
@@ -688,7 +707,6 @@
         flex-direction: row;
         gap: 4rem;
         margin: 10rem 20rem 0 0;
-        background: rgba(31, 43, 44, 0.8);
     }
     .header__link {
         font-size: 1.7rem;

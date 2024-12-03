@@ -4,15 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bonz.ai - Upplev Skandinaviens mest innovativa och miljövänliga hotell. Boka idag!">
+    <meta name="description"
+        content="Bonz.ai - Upplev Skandinaviens mest innovativa och miljövänliga hotell. Boka idag!">
     <link rel="stylesheet" href="style.css">
     <title>Bonz.ai</title>
 </head>
 
 <body>
-    <!-- Wrapper för hela startsidan -->
     <main class="hero">
-        <!-- Navigation -->
         <nav class="hero__nav">
             <img src="images/bonz.ai-logo-white-landscape-webp.webp" alt="Bonz.ai logo" class="hero__logo-landscape">
             <img src="images/bonz.ai-logo-white-portrait-full-webp.webp" alt="Bonz.ai logo" class="hero__logo-full">
@@ -22,6 +21,7 @@
                 <a href="info.html" class="hero__nav-link">Om oss</a>
             </section>
         </nav>
+        
         <section class="hero__content">
             <h1 class="hero__heading">Välkom<br>men till <br>Bonz.ai</h1>
             <h2 class="hero__subheading">Kom och upplev det mest innovativa och<br> miljövänliga hotellet i Skandinavien
@@ -34,14 +34,36 @@
             <a href="info.html" class="hero__link">Om oss</a>
         </section>
 
-        <section class="hero__form">
-            <img src="images/key (1).webp" alt="key icon" class="hero__key">
-            <p class="hero__date">Välj datum</p>
-            <p class="hero__room">1 rum, 2 vuxna</p>
-            <a href="booking.html" class="hero__link-button">
-                <button class="hero__button">Sök</button>
-            </a>
-        </section>
+        <form class="hero__form" action="booking.html" method="GET">
+            <h3 id="booking-form-title">Boka ditt rum</h3>
+            <section class="form__group">
+                <label for="check-in" class="form__label">Från datum</label>
+                <input type="date" class="form__input" id="check-in" name="check-in" required aria-describedby="check-in-help">
+            </section>
+            <section class="form__group">
+                <label for="check-out" class="form__label">Till datum</label>
+                <input type="date" class="form__input" name="check-out" id="check-out"  required
+                aria-describedby="check-out-help">
+            </section>
+            <section class="form__group">
+                <label for="guests" class="form__label">Antal gäster</label>
+                <select id="guests" class="form__select" name="guests" aria-describedby="guests-help" required>
+                    <option value="1">1 vuxen</option>
+                    <option value="2" selected>2 vuxna</option>
+                    <option value="3">3 vuxna</option>
+                    <option value="4">4 vuxna</option>
+                  </select>
+            </section>
+            <section class="form__group">
+                <label for="rooms" class="form__label">Antal rum</label>
+                <select name="rooms" class="form__select" id="rooms" aria-describedby="rooms-help" required>
+                    <option value="1" selected>1 rum</option>
+                    <option value="2">2 rum</option>
+                    <option value="3">3 rum</option>
+                </select>
+            </section>
+            <button class="form__button">Sök</button>
+        </form>
     </main>
 
 </body>
