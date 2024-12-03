@@ -406,10 +406,10 @@
         height: 20rem;
     }
 
-
     .header__logo-desktop {
         height: 15rem;
         width: 14rem;
+        object-fit: cover;
     }
 
     .header__links {
@@ -432,13 +432,11 @@
     .header__link--active {
         border-bottom: 0.2rem solid var(--lightgreen);
     }
-    .header__icon {
-        height: 4rem;
-        width: 3rem;
-    }
+
     .booking {
         grid-area: main;
     }
+    
     .booking__text {
         background-color: var(--white);
         width: 40%;
@@ -606,6 +604,7 @@
 .info__arrow {
     height: 2rem;
     width: 2rem;
+    object-fit: cover;
 }
 .info__ai {
     display: none;
@@ -682,10 +681,12 @@
     .info__globe {
         height: 3rem;
         width: 3rem;
+        object-fit: cover;
     }
     .info__arrow {
         height: 3rem;
         width: 4rem;
+        object-fit: cover;
     }
     .info__heading {
         font-size: 1.7rem;
