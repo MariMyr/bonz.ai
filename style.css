@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
 }
+
 :root {
     --beige: #F4EFE7;
     --white: #F5F5F5;
@@ -14,6 +15,7 @@
     --lightbrown: #A57B4D;
     --darkbrown: #70432B;
 }
+
 @font-face {
     font-family: 'Michroma';
     src: url(fonts/Fonts/Michroma-Regular.woff2) format('woff2');
@@ -21,6 +23,7 @@
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Montserrat';
     src: url(fonts/Fonts/Montserrat-Regular.woff2) format('woff2');
@@ -42,32 +45,39 @@
     flex-direction: column;
     text-align: center;
 }
+
 .hero__nav {
     display: flex;
     justify-content: space-between;
     padding: 2rem;
 }
+
 .hero__logo-landscape {
     width: 12rem;
     height: 3rem;
 }
+
 .hero__menu {
     height: 3rem;
     width: 3rem;
     margin-left: auto;
 }
+
 .hero__logo-full,
 .hero__nav-link,
 .hero__heading--desktop {
     display: none;
 }
+
 .hero__content {
     margin-top: 6rem;
 }
+
 .hero__heading {
     font-size: 3rem;
     font-family: 'Michroma', Arial, sans-serif;
 }
+
 .hero__subheading {
     font-size: 1.5rem;
     font-weight: 100;
@@ -75,11 +85,13 @@
     margin-bottom: 1rem;
     padding: 2rem;
 }
+
 .hero__divider {
     width: 70%;
     margin: 0 auto;
     border-color: var(--orange);
 }
+
 .hero__links {
     margin-top: 2rem;
     display: flex;
@@ -87,13 +99,16 @@
     font-size: 1.6rem;
     cursor: pointer;
 }
+
 .hero__link {
     text-decoration: none;
     color: var(--white);
 }
+
 .hero__link:hover {
     background-color: #f4a261;
 }
+
 .form {
     display: none;
 }
@@ -106,6 +121,7 @@
         background-size: 35% 100%, 65% 100%;
         background-repeat: no-repeat;
     }
+
     .hero__logo-landscape,
     .hero__divider,
     .hero__menu-icon,
@@ -114,6 +130,7 @@
     .hero__menu {
         display: none;
     }
+
     .hero__nav-link,
     .form {
         display: block;
@@ -123,15 +140,18 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
+
     .hero__logo-full {
         display: block;
         width: 17rem;
         height: auto;
     }
+
     .hero__nav-links {
         display: flex;
         gap: 4rem;
     }
+
     .hero__nav-link {
         font-size: 2.3rem;
         text-decoration: none;
@@ -140,14 +160,17 @@
         margin: 4rem 0 0 2rem;
         white-space: nowrap;
     }
+
     .hero__nav-link:hover {
         color: var(--orange);
     }
+
     .hero__subheading {
         font-size: 2rem;
         margin-left: 17rem;
         text-align: left;
     }
+
     .form {
         top: 43rem;
         right: 18rem;
@@ -163,14 +186,17 @@
         justify-content: space-between;
         align-items: center;
     }
+
     .form__group {
         flex: 1;
     }
+
     .form__label {
         display: block;
         font-weight: bold;
         margin-bottom: 0.5rem;
     }
+
     .form__label,
     .form__select {
         width: 100%;
@@ -178,12 +204,14 @@
         font-size: 1rem;
         font-weight: 100;
     }
+
     .form__input {
-        padding: 0.5rem; 
-        font-size: 1rem; 
-        height: 2.5rem; 
+        padding: 0.5rem;
+        font-size: 1rem;
+        height: 2.5rem;
         width: 100%;
     }
+
     .form__button {
         background-color: var(--darkgreen);
         color: var(--white);
@@ -193,17 +221,17 @@
         border-radius: 1rem;
         cursor: pointer;
     }
+
     .form__button:hover {
         background-color: var(--orange);
-      }
+    }
 }
 
-
 /*Search-sidan*/
-
 .search {
     background-color: var(--beige);
 }
+
 .search__form {
     font-family: 'Montserrat';
     display: flex;
@@ -212,16 +240,20 @@
     margin: 0 auto;
     padding: 2rem;
 }
-.search__title {
+
+.search__title-mobile {
+    display: block;
     font-family: 'Michroma';
     font-size: 2rem;
     font-weight: 100;
     text-align: center;
     margin: 3rem 0 1rem 0;
 }
+
 .search__label {
     font-size: 1.2rem;
 }
+
 .search__select,
 .search__input {
     width: 100%;
@@ -229,6 +261,7 @@
     font-size: 1rem;
     margin-top: 0.5rem;
 }
+
 .search__button {
     padding: 1rem;
     margin-top: 1rem;
@@ -238,46 +271,128 @@
     border-radius: 1rem;
     cursor: pointer;
 }
+
 .search__button:hover {
     background: var(--green);
     color: var(--white);
 }
+
 .search__gift {
     font-weight: 100;
-    padding: 2rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;text-align: center;
+    justify-content: center;
+    text-align: center;
 }
+
 .search__gift-title {
     font-family: 'Montserrat';
     font-weight: 100;
     margin-bottom: 1rem;
 }
+
 .search__gift-image {
-    height: auto;
-    width: auto;
+    height: 12rem;
+    width: 20rem;
     object-fit: cover;
     border-radius: 0.5rem;
 }
+
 .search__image-text {
     margin-top: 0.5rem;
     font-family: 'Montserrat';
 }
 
+.search__title-desktop,
+.search__gift-image--second {
+    display: none;
+}
+
 /*Media queries for desktop search-site*/
 @media only screen and (min-width: 768px) {
+    .search__form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto;
+        gap: 2rem;
+        max-width: 80%;
+        /*FIXA PÅ DENNA*/
+        margin: 2rem auto;
+    }
 
+    .search__title-desktop {
+        display: block;
+        font-family: 'Michroma';
+        font-size: 3rem;
+        font-weight: 100;
+        text-align: center;
+        margin: auto;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        border-bottom: 0.1rem solid var(--orange);
+        width: 50%;
+    }
+
+    .search__group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .search__label {
+        font-size: 1.6rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .search__select,
+    .search__input {
+        font-size: 1.2rem;
+        height: 3rem;
+        width: 100%;
+    }
+
+    .search__button {
+        font-size: 1.5rem;
+        width: 20rem;
+        padding: 1rem;
+        margin-top: 3rem;
+        grid-column: span 2;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .search__gift-images {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .search__gift-image {
+        width: 40%;
+        height: auto;
+    }
+
+    .search__gift-image--second {
+        display: block;
+    }
+
+    .search__gift-title {}
+
+    .search__title-mobile {
+        display: none;
+    }
 }
 
 /* Booking-sidan */
 .header {
     height: 6rem;
     width: 100%;
-    background: url(images/green-background.webp);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(images/green-background.webp);
     display: flex;
     align-items: center;
 }
+
 .header__container {
     width: 100%;
     display: flex;
@@ -286,6 +401,7 @@
     padding: 0 1rem;
     position: relative;
 }
+
 .header__logo-mobile {
     height: 2.3rem;
     width: auto;
@@ -295,15 +411,18 @@
     margin-bottom: -2rem;
     cursor: pointer;
 }
+
 .header__menu {
     height: 2rem;
     margin-bottom: -2rem;
     margin-right: auto;
 }
+
 .booking__text {
     padding-top: 1.5rem;
     background-color: var(--beige);
 }
+
 .booking__title {
     font-family: 'Michroma', sans-serif;
     font-size: 1.5rem;
@@ -311,14 +430,17 @@
     text-align: center;
     margin-bottom: 0.7rem;
 }
+
 .booking__details {
     font-family: 'Montserrat';
     font-size: 1rem;
     text-align: center;
 }
+
 .booking {
     background-color: var(--beige)
 }
+
 .booking__cards {
     font-family: 'Montserrat';
     padding: 3rem;
@@ -326,6 +448,7 @@
     flex-direction: column;
     gap: 2rem;
 }
+
 .booking__card {
     background-color: var(--white);
     border-radius: 0.5rem;
@@ -334,22 +457,26 @@
     overflow: hidden;
     gap: 1rem;
 }
+
 .booking__image {
     width: 100%;
     object-fit: cover;
     border-radius: 0.5rem 0.5rem 0 0;
 }
+
 .booking__roomname,
 .booking__description,
 .booking__price {
     padding-left: 1rem;
     text-align: left;
 }
+
 .booking__divider {
     width: 90%;
     margin: 0 auto;
     border-color: var(--orange);
 }
+
 .booking__button {
     background-color: var(--lightgreen);
     color: var(--black);
@@ -364,17 +491,21 @@
     cursor: pointer;
     border: none;
 }
+
 .booking__button:hover {
     background-color: var(--lightbrown);
 }
+
 .booking__card--first,
 .booking__card--third {
     border: 0.11rem solid var(--darkgreen);
 }
+
 .booking__card--second,
 .booking__card--fourth {
     border: 0.2rem solid var(--lightgreen)
 }
+
 .footer {
     height: auto;
     width: 100%;
@@ -386,6 +517,7 @@
     padding: 0.5rem;
     position: relative;
 }
+
 .footer__logo {
     position: absolute;
     top: 1rem;
@@ -393,13 +525,16 @@
     height: 3rem;
     width: 3rem;
 }
+
 .footer__title {
     font-size: 0.8rem;
     margin-top: 0.5rem;
 }
+
 .footer__adress-text {
     font-size: 0.7rem;
 }
+
 /*Display none i mobil-vy*/
 .header__link,
 .header__logo-desktop,
@@ -421,21 +556,27 @@
             "main main main main main main"
             "footer footer footer footer footer footer";
     }
+
     .header {
         font-family: 'Michroma', sans-serif;
         font-weight: bold;
-        background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.5)), url(images/green-background.webp);
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(images/green-background.webp);
+        background-size: cover;
+        background-position: center;
         grid-area: header;
         height: 20rem;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
     }
+
     .header__logo-desktop {
         height: 15rem;
         width: 14rem;
         object-fit: cover;
         margin: 0 0 2rem 2rem;
     }
+
     .header__link {
         font-size: 1.7rem;
         text-decoration: none;
@@ -444,15 +585,19 @@
         margin: 10rem 0 0 10rem;
         white-space: nowrap;
     }
+
     .header__link:hover {
         color: #f4a261;
     }
+
     .header__link--active {
         border-bottom: 0.2rem solid var(--lightgreen);
     }
+
     .booking {
         grid-area: main;
     }
+
     .booking__text {
         background-color: var(--white);
         width: 40%;
@@ -463,13 +608,16 @@
         margin-top: 5rem;
         border-radius: 1rem;
     }
+
     .booking__title {
         font-size: 2.5rem;
         border-bottom: 0.2rem solid var(--orange);
     }
+
     .booking__details {
         font-size: 1.5rem;
     }
+
     .booking__cards {
         padding: 3rem 1rem 8rem 10rem;
         display: grid;
@@ -481,43 +629,55 @@
         grid-template-columns: repeat(6, 1fr);
         gap: 3rem;
     }
+
     .booking__card--first {
         grid-area: first;
     }
+
     .booking__card--second {
         grid-area: second;
     }
+
     .booking__card--third {
         grid-area: third;
     }
+
     .booking__card--fourth {
         grid-area: fourth;
     }
+
     .booking__card--fifth {
         grid-area: fifth;
     }
+
     .booking__card--sixth {
         grid-area: sixth;
     }
+
     .booking__card {
         width: 85%;
         height: auto;
         border: 0.3rem solid var(--green);
     }
+
     .booking__image {
         height: 70%;
     }
+
     .booking__roomname {
         font-size: 1.4rem;
     }
+
     .booking__description,
     .booking__price {
         font-size: 1.2rem;
     }
+
     .booking__button {
         height: 3rem;
         width: 10rem;
     }
+
     .footer {
         grid-area: footer;
         height: 20rem;
@@ -525,31 +685,37 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
     }
+
     .footer__logo {
         height: 6rem;
         width: 6rem;
         margin-top: 2rem;
         margin-left: 4rem;
     }
+
     .footer__some {
         height: 12rem;
         width: 12rem;
         padding-top: 7rem;
         margin-left: 2rem;
     }
+
     .footer__vision {
         margin-right: 4rem;
     }
+
     .footer__title {
         font-size: 1.3rem;
         margin-top: 0.5rem;
         font-weight: 100;
     }
+
     .footer__adress-text,
     .footer__vision-text {
         font-size: 1rem;
         font-weight: 100;
     }
+
     .header__link,
     .header__logo-desktop,
     .header__icon,
@@ -559,6 +725,7 @@
     .footer__vision {
         display: block;
     }
+
     .header__logo-mobile,
     .header__menu {
         display: none;
@@ -571,9 +738,10 @@
     display: flex;
     flex-direction: column;
 }
+
 .info__title {
     font-family: 'Michroma', sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 100;
     text-align: center;
     border-bottom: 0.1rem solid var(--orange);
@@ -582,6 +750,7 @@
     margin-top: 2rem;
     margin-bottom: -1rem;
 }
+
 .info__card {
     font-size: 1rem;
     line-height: 1.5;
@@ -591,53 +760,61 @@
     flex-direction: column;
     overflow: hidden;
 }
+
 .info__image {
     border-radius: 0.5rem;
     width: 100%;
     height: auto;
 }
+
 .info__card--second {
     background-color: var(--darkbrown);
     color: var(--white);
 }
+
 .info__card--third {
     background-color: var(--green);
     color: var(--white);
 }
+
 .info__card--fourth {
     background-color: var(--lightgreen);
 }
+
 .info__carbon {
     margin: 1rem;
     display: flex;
     padding: 1rem;
 }
+
 .info__heading {
     font-family: 'Michroma', sans-serif;
     font-size: 1rem;
     font-weight: 100;
     padding: 0.5rem;
 }
+
 .info__globe,
 .info__arrow {
     height: 2rem;
     width: 2rem;
     object-fit: cover;
 }
+
 .info__ai {
     display: none;
 }
 
 /* Media queries för desktop info */
-@media only screen and (min-width: 1000px) {
-    .header__link.active{
+@media only screen and (min-width: 768px) {
+    .header__link.active {
         border-bottom: 0.2rem solid var(--lightgreen);
     }
     .info {
         background-color: var(--beige);
     }
     .info__title {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         border-bottom: 0.2rem solid var(--orange);
         width: 30%;
         margin-top: 5rem;
@@ -660,13 +837,13 @@
         min-height: 27rem;
     }
     .info__image {
-        width: 65%;
+        width: 70%;
         height: 100%;
         object-fit: cover;
     }
     .info__text {
         font-size: 1.1rem;
-        line-height: 1.9;
+        line-height: 1.5;
         width: 100%;
         object-fit: cover;
     }
@@ -720,104 +897,3 @@
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width:1100px) {
-    .header__links {
-        display: flex;
-        flex-direction: row;
-        gap: 4rem;
-        margin: 10rem 20rem 0 0;
-    }
-    .header__link {
-        font-size: 1.7rem;
-        text-decoration: none;
-        color: var(--white);
-        cursor: pointer;
-        padding: 1.5rem;
-    }
-    .header__link.active{
-        border-bottom: 0.2rem solid var(--lightgreen);
-    }
-    .info {
-        background-color: var(--beige);
-    }
-    .info__title {
-        font-size: 2.5rem;
-        border-bottom: 0.2rem solid var(--orange);
-        width: 30%;
-        margin-bottom: 5rem;
-    }
-    .info__cards {
-        margin: 5rem;
-        height: 70rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-        gap: 2rem;
-        grid-template-areas:
-            "first second"
-            "third fourth"
-            "carbon ai";
-    }
-    .info__card {
-        display: flex;
-        flex-direction: column;
-        min-height: 27rem;
-    }
-    .info__image {
-        width: 65%;
-        height: 100%;
-        object-fit: cover;
-    }
-    .info__text {
-        font-size: 1rem;
-        line-height: 1.7;
-        width: 100%;
-        object-fit: cover;
-    }
-    .info__card--first {
-        grid-area: first;
-        background-color: var(--white);
-        display: flex;
-        flex-direction: row;
-    }
-    .info__card--second {
-        grid-area: second;
-        display: flex;
-        flex-direction: row-reverse;
-    }
-    .info__card--third {
-        grid-area: third;
-        display: flex;
-        flex-direction: row-reverse;
-    }
-    .info__card--fourth {
-        grid-area: fourth;
-        display: flex;
-        flex-direction: row;
-    }
-    .info__carbon {
-        grid-area: carbon;
-        display: flex;
-        flex-direction: row;
-    }
-    .info__globe {
-        height: 3rem;
-        width: 3rem;
-    }
-    .info__arrow {
-        height: 3rem;
-        width: 4rem;
-    }
-    .info__heading {
-        font-size: 1.7rem;
-        font-weight: 100;
-    }
-    .info__ai {
-        grid-area: ai;
-        display: block;
-        display: flex;
-        flex-direction: row;
-        margin-top: 2rem;
-        margin-left: 2rem;
-    }
-}
