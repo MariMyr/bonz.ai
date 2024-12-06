@@ -302,6 +302,7 @@
 .search__image-text {
     margin-top: 0.5rem;
     font-family: 'Montserrat';
+    cursor: pointer;
 }
 
 .search__title-desktop,
@@ -317,7 +318,6 @@
         grid-template-rows: auto auto;
         gap: 2rem;
         max-width: 80%;
-        /*FIXA PÅ DENNA*/
         margin: 2rem auto;
     }
 
@@ -835,17 +835,19 @@
         display: flex;
         flex-direction: column;
         min-height: 27rem;
+        padding: 0;
     }
     .info__image {
-        width: 70%;
+        width: 60%;
         height: 100%;
         object-fit: cover;
     }
     .info__text {
-        font-size: 1.1rem;
-        line-height: 1.5;
+        font-size: 1.2rem;
+        line-height: 1.7;
         width: 100%;
         object-fit: cover;
+        padding: 1.5rem;
     }
     .info__card--first {
         grid-area: first;
